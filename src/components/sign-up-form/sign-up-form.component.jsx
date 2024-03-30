@@ -31,7 +31,6 @@ const SignUpForm = () => {
 
         try {
             const { user } = await createAuthUserWithEmailAndPassword(email, password);
-
             await createUserDocumentFromAuth(user, { displayName });
             resetFormFields();
         }
@@ -42,17 +41,6 @@ const SignUpForm = () => {
                 console.log('User creation encountered an error: ', error);
             }
         }
-
-        // // See if we've authenticated that user with email and password
-        // const user = await createAuthUserWithEmailAndPassword(email, password, displayName);
-        // user.displayName = displayName;
-
-        // console.log(user);
-
-        // // Create user document
-        // const userDocRef = await createUserDocumentFromAuth(user);
-
-        // console.log(userDocRef);
     }
 
     const handleChange = (event) => {
