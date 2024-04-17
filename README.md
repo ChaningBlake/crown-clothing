@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# Crown Clothing
+
+This is a mock ecommerce application using React functional components. It uses firebase for user authentication and data storage. 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
