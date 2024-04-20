@@ -19,7 +19,8 @@ import {
     query,
     getDocs
 } from 'firebase/firestore';
-import SHOP_DATA from '../shop-data';
+
+// import SHOP_DATA from '../shop-data'; // Used to load database
 
 const firebaseConfig = {
     apiKey: "AIzaSyA-KWaXLUV_dioylFKyuWTWdx-C3mE-Yi8",
